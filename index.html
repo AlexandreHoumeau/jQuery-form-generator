@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Generator | jQuery</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
+<body>
+  <div class="app cent">
+  	
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="lib/index.js"></script>
+  <script>
+    // Run the Plugin
+    $(document).ready(function() {
+      var myForm = $('.app').MyForm([{
+      	'label': 'Name',
+      	'type': 'text', 
+      	'mode': 'require',
+      	'placeholder': 'Your name',
+      },{
+      	'label': 'Email', 
+      	'type': 'text', 
+      	'mode': 'require',
+      	'placeholder': 'Your email',
+      },{
+      	'label': 'Password', 
+      	'type': 'password', 
+      	'mode': 'require',
+      	'placeholder': 'Your password',
+      },{
+      	'label': 'Country', 
+      	'type': 'select', 
+      	'option': ['fance', 'belgique', 'chine'],
+      	'mode': 'require'
+      },{
+      	'label': 'I agree to the conditions', 
+      	'type': 'checkbox', 
+      	'mode': 'require',
+      }])
+  });
+
+  </script>
+</body>
+</html>
